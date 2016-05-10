@@ -1,3 +1,85 @@
 @media only screen and (max-width: 768px) {
-	
+
+	#posts {
+		width: 100%
+	}
+
+	#sidebar {
+		width: 100%;
+		text-align: center;
+	}
+
+	/* Decrease the font sizes */
+	body {
+		font-size: 1.375rem;
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	.logo {
+		font-size: 2.75rem;
+	}
+
+	#hero {
+		height: 600px;
+	}
+
+	#hero h2 {
+		font-size: 2.75rem;
+	}
+
+	.button {
+		font-size: 1.5rem;
+	}
+
+	.blue {
+		font-size: 1.25rem;
+	}
+
+	h3 {
+		font-size: 2.25rem;
+	}
+
+	blockquote {
+		font-size: 2rem;
+		width: 80%;
+	}
+
+	.post h2 {
+		font-size: 2.25rem;
+	}
+
+	.post p {
+		font-size: 1.25rem;
+	}
+
+	.post p:first-of-type:first-letter {
+		font-size: 4.75rem;
+	}
+
+	#sidebar h3 {
+		font-size: 1.75rem;
+	}
+
+	#sidebar ul li a {
+		font-size: 1.25rem;
+	}
+
+	#sidebar p {
+		font-size: 1.125rem;
+	}
+
+	#benefits p, #benefits ul {
+		width: 90%;
+	}
+
+	footer p {
+		font-size: 0.875rem;
+	}
+
+	footer .logo {
+		margin-bottom: 1.923em;
+	}
 }
