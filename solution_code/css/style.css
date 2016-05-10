@@ -47,16 +47,16 @@ Developer @GA in NYC
 
 body {
   color: #f0efef;
-  font-size: 26px;
+  font-size: 1.625rem; /* based on rem so if user zooms in then text scales while maintaining a base of 26px */
   line-height: 1.4;
   color: #606161;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
+
 a {
   text-decoration: none;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -64,17 +64,18 @@ a {
 
 /* Center the container */
 .container {
-  width: 960px;
+  width: 90%;
   margin: 0 auto;
+  max-width: 960px; /* Don't want the width to exceed 960px */
 }
 .logo {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 800;
 }
 
 header {
   background: #033048;
-  padding: 25px 0;
+  padding: 1em 0;
   overflow: hidden;
 }
 header .logo {
@@ -84,12 +85,12 @@ header .logo {
 
 header nav {
   float: right;
-  margin-top: 15px;
+  margin-top: .625em;
 }
 header nav ul li {
   display: inline-block;
-  margin: 0 0 0 40px;
-  font-size: 24px;
+  margin: 0 0 0 1.538em;
+  font-size: 1em;
 }
 header nav ul li a {
   color: #f9e42e;
@@ -98,25 +99,25 @@ header nav ul li a {
 #hero {
   height: 700px;
   background: url(../images/header_bg.jpg) no-repeat top center #131e27;
-  padding-top: 32px;
+  padding-top: 1.23em;
 }
 
 #hero .logo {
   color: #fff;
 }
 #hero h2 {
-  font-size: 48px;
+  font-size: 3rem;
   text-align: center;
   color: #fff;
-  margin: 120px 0 90px;
+  margin: 2.5em 0 1.875em;
   font-weight: 600;
 }
 .button {
   border-radius: 5px;
   font-weight: 800;
-  padding: 12px 0;
-  width: 280px;
-  font-size: 28px;
+  padding: .428em 0;
+  width: 10em;
+  font-size: 1.75rem;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -128,31 +129,31 @@ header nav ul li a {
 .blue {
   background: #033048;
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 #benefits {
-  padding: 100px 0 80px;
+  padding: 3.846em 0 3.076em;
 }
 h3 {
   color: #033048;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 1em;
 }
 #benefits p, #benefits ul {
   width: 600px;
 }
 #benefits ul {
   list-style: disc;
-  margin: 30px 0 0 80px;
+  margin: 1.153em 0 0 3.076em;
 }
 #testimonial {
   background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
-  padding: 70px 0 70px;
+  padding: 2.692em 0 2.692em;
   color: #fff;
 }
 blockquote {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 300;
   font-style: italic;
   text-align: center;
@@ -165,54 +166,55 @@ blockquote span {
   font-style: normal;
 }
 #main {
-  margin-top: 80px;
+  margin-top: 3.076em;
 }
 #posts {
-  width: 700px;
+  width: 72.91%;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 2.09%;
   vertical-align: top;
 }
 #sidebar {
-  width: 240px;
+  width: 25%;
   display: inline-block;
   vertical-align: top;
 }
 .post {
   border-bottom: 1px solid #043049;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 1.538em;
+  margin-bottom: 1.538em;
 }
 .post h2 {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.3;
-  margin-bottom: 30px;
+  margin-bottom: 0.75em;
 }
 .post h2 a {
   color: #043049;
 }
 
 .post img {
-  margin-bottom: 30px;
+  margin-bottom: 1.153em;
+  width: 100%;
 }
 .post p {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.333;
   color: #606161;
 }
 .post p:first-of-type:first-letter {
   float: left;
-  font-size: 80px;
-  line-height: 65px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
+  font-size: 5rem;
+  line-height: 0.8125em;
+  padding-top: 0.05em;
+  padding-right: 0.1em;
+  padding-left: .0375em;
   font-weight: 600;
 }
 .readmore {
   text-align: right;
-  margin-top: 30px;
+  margin-top: 1.25em;
 }
 .readmore a {
   color: #043049;
@@ -240,22 +242,22 @@ blockquote span {
 }*/
 
 #sidebar h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 800;
-  margin-bottom: 15px;
+  margin-bottom: 0.468em;
   color: #043049;
 }
 #sidebar ul {
-  margin-bottom: 40px;
+  margin-bottom: 1.66em;
 }
 #sidebar ul li a {
   color: #043049;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 #sidebar p {
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 1.1;
-  margin-bottom: 40px;
+  margin-bottom: 1.818em;
 }
 #sidebar p a {
   color: #043049;
@@ -264,26 +266,26 @@ blockquote span {
 
 #bottom-cta {
   background: #f9e42e;
-  padding: 30px;
+  padding: 1.153em;
   text-align: center;
 }
 
 footer {
   background: #121212;
-  padding: 65px 0 45px;
+  padding: 2.5em 0 1.730em;
   text-align: center;
 }
 footer .logo {
   color: #f9e42e;
-  margin-bottom: 68px;
+  margin-bottom: 2.615em;
 }
 footer ul li {
   display: inline-block;
   list-style: none;
-  margin: 0 26px 75px;
+  margin: 0 1em 2.884em;
 }
 footer p {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fff;
   font-weight: 600;
 }
